@@ -166,14 +166,29 @@ body::after {
 }
 
 /* Moment Captured in Time background */
+
+/*
 .moment {
-  background-image: url("Birches.jpg");
+  background-image: url("sticker_stars.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2b2be9;
+
+  padding: 30px 20px;
+}
+  */
+
+.moment {
+  background-image: url("birches.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   padding: 30px 20px;
 }
+
+
 
 body {
   cursor: url("https://cur.cursors-4u.net/symbols/sym-1/sym49.cur"), auto;
@@ -292,8 +307,18 @@ nav a:hover {
 }
 
 /* Override box background for moment section */
+/*
 .box.moment {
-  background-image: url("Birches.jpg");
+  background-image: url("sticker_stars.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #2b2be9;
+  background-repeat: no-repeat;
+}
+*/
+
+.box.moment {
+  background-image: url("birches.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -361,8 +386,8 @@ footer {
   <div class="box">
     <p><strong>Date:</strong> August 22, 2026</p>
     <p><strong>Location:</strong> Elk Rapids, Michigan</p>
-    <p><strong>Wedding Mass:</strong> 2:00 PM • Sacred Heart Catholic Church</p>
-    <p><strong>Reception:</strong> 5:00 PM • White Birch Lodge</p>
+    <p><strong>Wedding Mass:</strong> 2:00 PM • Sacred Heart Catholic Church • 143 Charles </p>
+    <p><strong>Reception:</strong> 5:00 PM • White Birch Lodge • 571 Meguzee Point Rd</p>
     <p><strong>Dress Code:</strong> Semi-formal (Suit tie optional). Please note, the reception will take place 
       in a tent outside the lodge on a grassy area, so we recommend comfortable shoes!</p>
     <p><strong>Kids:</strong> Bring your little ones! They are welcome at both the wedding mass and reception.
@@ -375,10 +400,10 @@ footer {
   <div class="box">
     <p><strong>Staying at White Birch Lodge</strong></p>
     <p>
-      All units at the White Birch Lodge are reserved exclusively this weekend for our wedding guests.
+      All units at the White Birch Lodge are reserved exclusively this weekend for our wedding guests to book.
       The property is lakefront and includes private beaches, docks, kayaks,
       paddleboards, fire pits, and shared outdoor spaces. Accommodations range from rustic cabins to
-      condos and townhouses, and range in price from $265–$575 per night.
+      condos and townhouses. Breakfast will be provided Saturday and Sunday mornings for all guests staying on-site.
       
     </p>
 
@@ -395,8 +420,8 @@ footer {
 
     <p><strong>Other options</strong></p>
     <p>
-      We will also be reserving a block of rooms at a nearby hotel -- stay tuned for information on how to book.
-      There are also many airbnbs available on/ around Elk Lake as well if you are interested in that option.
+      We have reserved a block of rooms at the nearby Dexter hotel (112 Dexter St) in Elk Rapids that will be available at a discounted rate -- 
+      stay tuned for information on how to book. There are also many airbnbs available in Elk Rapids or a short drive away in Traverse City.
     </p> 
   </div>
 </div>
@@ -439,14 +464,6 @@ footer {
 
 </div>
 
-<script>
-fetch("https://api.countapi.xyz/hit/ellie-alexander-wedding/visits")
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById("visitor-count").innerText =
-      data.value.toString().padStart(6, "0");
-  });
-</script>
 
 <script>
 document.addEventListener("click", function (e) {
